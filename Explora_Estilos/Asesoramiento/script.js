@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const messageElement = document.createElement('div');
         messageElement.classList.add('message', sender);
         messageElement.innerHTML = `
-            <img src="${sender === 'bot' ? 'path_to_bot_logo.png' : 'path_to_user_avatar.png'}" alt="${sender}">
+            <img src="${sender === 'bot' ? '../imagenes/path_to_bot_logo.png' : '../imagenes/path_to_user_avatar.png'}" alt="${sender}">
             <div class="message-content">${message}</div>
         `;
         chatMessages.appendChild(messageElement);
